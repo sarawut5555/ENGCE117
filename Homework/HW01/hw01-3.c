@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main()
-{
+int main(){
     char fn[50] = "";
     char ln[50] = "";
 

@@ -1,0 +1,2 @@
+Employees ID = 0001
+Salary = U$ 400000.00
