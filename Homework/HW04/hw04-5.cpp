@@ -1,11 +1,11 @@
 #include <stdio.h>
 
-int main(){
-    int d;
-    printf("Enter Value Days: ");
-    scanf("%d",&d);
+int main() {
+    int days ;
+    printf( "Enter Value Days: " ) ;
+    scanf( "%d", &days ) ;
 
-    int result = d * 86400;
-    printf("%d days = %d seconds",d ,result);
-    return 0;
-}
+    int result = days * 86400 ;
+    printf( "%d days = %d seconds", days, result ) ; 
+    return 0 ;
+}//end function

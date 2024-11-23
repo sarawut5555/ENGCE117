@@ -1,15 +1,14 @@
 #include <stdio.h>
 
-int main(){
-    int h, b = 0;
+int main() {
+    int h, w = 0 ;//height and width
 
-    printf("Enter height: ");
-    scanf("%d",&h);
-    printf("Enter base: ");
-    scanf("%d",&b);
+    printf( "Enter height: " ) ;
+    scanf( "%d", &h ) ;
+    printf( "Enter width: " ) ;
+    scanf( "%d", &w ) ;
 
-    float result = 0.5 * h * b;
-
-    printf("Triagle Area : %.1f", result);
-    return 0;
-}
+    float result = 0.5 * h * w ;
+    printf( "Triagle Area : %.1f", result ) ;
+    return 0 ;
+}//end function
