@@ -1,0 +1,40 @@
+**กรณีที่มีบะหมี่ แล้วแก๊สหมด**
+Your have noodle? ( y/n ) : y
+Add water
+Boil water
+Turn on the gas
+Wait for the water to boil
+Out of gas? ( y/n ) : y
+Ask for help from adults
+
+**กรณีที่มีบะหมี่ แล้วแก๊สไม่หมด**
+Your have noodle? ( y/n ) : y
+Add water
+Boil water
+Turn on the gas
+Wait for the water to boil
+Out of gas? ( y/n ) : n
+Wait for the water to boil
+Boiling water? ( y/n ) : n
+Wait for the water to boil
+Boiling water? ( y/n ) : y
+Scoop the noodles out of the pot.
+Put the noodles in the bowl
+Put the seasonings in a bowl
+Turn off the gas
+Scoop the noodles into a bowl
+
+**กรณีที่ไม่มีบะหมี่ แล้วของหมด**
+Your have noodle? ( y/n ) : n
+Ask for money from adults
+Go shopping at the market
+Out of stock? ( y/n ) : y
+Find other products
+
+**กรณีที่ไม่มีบะหมี่ แล้วเงินพอ**
+Your have noodle? ( y/n ) : n
+Ask for money from adults
+Go shopping at the market
+Out of stock? ( y/n ) : n
+Do you have enough money?? ( y/n ) : y
+Buy noodles

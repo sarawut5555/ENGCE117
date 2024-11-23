@@ -10,7 +10,7 @@ int main() {
     printf( "lastname: " ) ;
     scanf( "%s", &ln ) ;
 
-    int len_fn = strlen(fn) ;
+    int len_fn = strlen( fn ) ;
     if( fn[ len_fn  - 1 ] == 'C' ) {
         fn[ len_fn - 1 ] = 'C' + 1 ;
     }//end if

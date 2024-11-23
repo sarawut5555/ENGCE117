@@ -1,0 +1,14 @@
+Post a job 
+There are interested customers? ( y/n ) : n
+Post a job
+There are interested customers? ( y/n ) : y
+Talk about work
+Customers are interested in hiring? ( y/n ) : n
+Post a job
+There are interested customers? ( y/n ) : y
+Employment contract
+Pay a deposit
+Work and report progress
+Finished work? ( y/n ) : y
+Pay the remaining amount
+receive money
