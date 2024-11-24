@@ -1,17 +1,17 @@
 Matrix1 :
-1 1
-1 1
+1 0
+0 1
 1 1
 
 Matrix2 :
-2 2 2
-2 2 2
+2 1 0
+0 1 2
 
 Transpose of Matrix1 is :
-1 1 1
-1 1 1
+1 0 1
+0 1 1
 
 Matrix1 x Matrix2 is :
-4 4 4
-4 4 4
-4 4 4
+2 1 0
+0 1 2
+2 2 2
