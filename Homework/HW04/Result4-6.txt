@@ -1,2 +1,11 @@
-Employees ID = 0001
-Salary = U$ 400000.00
+Enter Employee ID: 0342
+Input the working hrs: 8
+Salary amount/hr: 15000
+Employees ID = 0342
+Salary = U$ 120000.00
+
+Enter Employee ID: 0000500349  
+Input the working hrs: 11
+Salary amount/hr: 34000
+Employees ID = 0000500349
+Salary = U$ 374000.00

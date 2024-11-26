@@ -1,1 +1,7 @@
+Enter height: 6
+Enter width: 2
+Triagle Area : 6.0
+
+Enter height: 3
+Enter width: 5
 Triagle Area : 7.5

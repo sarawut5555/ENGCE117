@@ -1,0 +1,49 @@
+<mxfile host="Electron" modified="2024-11-25T16:57:03.844Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.1.2 Chrome/106.0.5249.199 Electron/21.4.3 Safari/537.36" etag="EFZTcteQ3OuXmPUeLC35" version="21.1.2" type="device">
+  <diagram name="Page-1" id="OnaN9dStVZTvdVWLDeKN">
+    <mxGraphModel dx="1052" dy="493" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Xa4Q-HbUc1zdIvHifuNp-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Xa4Q-HbUc1zdIvHifuNp-1" target="Xa4Q-HbUc1zdIvHifuNp-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Xa4Q-HbUc1zdIvHifuNp-1" value="Start" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="230" y="110" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Xa4Q-HbUc1zdIvHifuNp-2" value="Stop" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="230" y="710" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Xa4Q-HbUc1zdIvHifuNp-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Xa4Q-HbUc1zdIvHifuNp-3" target="Xa4Q-HbUc1zdIvHifuNp-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Xa4Q-HbUc1zdIvHifuNp-3" value="C = 0" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="220" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Xa4Q-HbUc1zdIvHifuNp-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Xa4Q-HbUc1zdIvHifuNp-4" target="Xa4Q-HbUc1zdIvHifuNp-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Xa4Q-HbUc1zdIvHifuNp-4" value="OUTPUT &quot;Enter Value degree Celsisus:&amp;nbsp; &quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="145" y="310" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Xa4Q-HbUc1zdIvHifuNp-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Xa4Q-HbUc1zdIvHifuNp-5" target="Xa4Q-HbUc1zdIvHifuNp-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Xa4Q-HbUc1zdIvHifuNp-5" value="INPUT C" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Xa4Q-HbUc1zdIvHifuNp-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Xa4Q-HbUc1zdIvHifuNp-6" target="Xa4Q-HbUc1zdIvHifuNp-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Xa4Q-HbUc1zdIvHifuNp-6" value="F = ( 1.8 * c ) + 32" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="510" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Xa4Q-HbUc1zdIvHifuNp-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Xa4Q-HbUc1zdIvHifuNp-7" target="Xa4Q-HbUc1zdIvHifuNp-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Xa4Q-HbUc1zdIvHifuNp-7" value="OUTPUT C &quot;degree celsius = &quot; F &quot;degree Fahrenheit&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="145" y="610" width="270" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

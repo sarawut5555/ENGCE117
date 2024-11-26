@@ -1,1 +1,9 @@
+input number 1: 2
+input number 2: 3
+input number 3: 1
+Answer = 6
+
+input number 1: 4
+input number 2: -1
+input number 3: 3
 Answer = 6

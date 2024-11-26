@@ -1,1 +1,5 @@
+Enter Value Hex: FB
+11111011
+
+Enter Value Hex: 19
 11001

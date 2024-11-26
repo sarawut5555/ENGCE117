@@ -1,1 +1,5 @@
-35 degree Celsius = 95.0 degree Fahrenheit
+Enter Value degree Celsius: 22
+22 degree Celsius = 71.6 degree Fahrenheit
+
+Enter Value degree Celsius: 36
+36 degree Celsius = 96.8 degree Fahrenheit
