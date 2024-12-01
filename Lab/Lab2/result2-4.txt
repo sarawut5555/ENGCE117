@@ -1,0 +1,45 @@
+   Hello  World  From Me
+str2[0] = "Hello"
+str2[1] = "World"
+str2[2] = "From"
+str2[3] = "Me"
+count = 4
+
+Apple,,Orange,Banana,,Grapes
+str2[0] = "Apple"
+str2[1] = "Orange"
+str2[2] = "Banana"
+str2[3] = "Grapes"
+count = 4
+
+key:value:key2:value2
+str2[0] = "key"
+str2[1] = "value"
+str2[2] = "key2"
+str2[3] = "value2"
+count = 4
+
+apple-orange!banana*grapes
+str2[0] = "apple"
+str2[1] = "orange"
+str2[2] = "banana"
+str2[3] = "grapes"
+count = 4
+
+apple-orange!banana*grapes
+str2[0] = "apple"
+str2[1] = "orange"
+str2[2] = "banana"
+str2[3] = "grapes"
+count = 4
+
+fruit_apple fruit_orange fruit_banana
+str2[0] = "fruit_apple"
+str2[1] = "fruit_orange"
+str2[2] = "fruit_banana"
+count = 3
+
+,,   ,Hello, World!   , ,
+str2[0] = "Hello"
+str2[1] = "World"
+count = 2
