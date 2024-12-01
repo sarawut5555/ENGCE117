@@ -25,4 +25,4 @@ int *GetSet( int *num ) {
        printf( "%d ", arr[ i ] ) ; 
     }//end for
     return arr ;
-}
+}//end function

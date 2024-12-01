@@ -8,7 +8,7 @@ int main() {
     return 0 ;
 }//end function
 
-int GetSet(int *data[]) {
+int GetSet( int *data[] ) {
     int num ;
     printf( "Enter the number of elements: " ) ;
     scanf( "%d", &num ) ;
