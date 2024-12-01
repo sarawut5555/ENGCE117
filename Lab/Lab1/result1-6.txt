@@ -1,0 +1,40 @@
+3 3
+1 2 3
+4 5 6
+7 8 9
+
+Enter number of rows and columns: 3 3
+Enter matrix elements:
+1 2 3 
+4 5 6 
+7 8 9 
+
+
+2 2
+10 20
+30 40
+
+Enter number of rows and columns: 2 2
+Enter matrix elements:
+10 20 
+30 40 
+
+
+1 1
+5
+
+Enter number of rows and columns: 1 1
+Enter matrix elements:
+5 
+
+
+0 0
+
+Enter number of rows and columns: 0 0
+
+
+2 3
+1 2 3
+4 5
+
+Error: Invalid matrix input
