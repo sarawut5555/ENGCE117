@@ -8,7 +8,7 @@ int main() {
     printf( "Enter width: " ) ;
     scanf( "%d", &w ) ;
 
-    float result = 0.5 * h * w ;
+    float result = ( h * w ) / 2 ;
     printf( "Triagle Area : %.1f", result ) ;
     return 0 ;
 }//end function

@@ -1,0 +1,11 @@
+Enter the number of elements: 3
+Enter the Elements: 10 20 30
+
+Number of elements: 3
+10 20 30
+
+Enter the number of elements: 5
+Enter the Elements: 1 2 3 4 5
+
+Number of elements: 5
+1 2 3 4 5

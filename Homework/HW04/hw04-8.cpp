@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(){
+int main() {
     int h, r, b ; //hex, remainder, binary
     int mul = 1 ; //multiplier
 
