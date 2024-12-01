@@ -1,31 +1,29 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-//int GetSet( int [] ) ;
+int GetSet( int* [] ) ;
 
 int main() {
-    int *data, num ;
+    int *data, num ;
     num = GetSet( &data ) ;
     return 0 ;
 }//end function
 
-int GetSet( int **data ) { //ต้องเพิ่ม pointer 2 ตัว และ ลบarray
+int GetSet(int *data[]) {
     int num ;
     printf( "Enter the number of elements: " ) ;
     scanf( "%d", &num ) ;
 
-    *data = (int *)malloc(num * sizeof(int));
+    *data = new int[ num ] ;
 
-    printf( "Enter the Elements: " ) ;
-    for ( int i = 0 ; i < num ; i++ ) {
-        scanf( "%d", &((*data)[ i ]) ); // รับค่าแต่ละตัวใส่ใน array
+    printf( "Enter the elements: " ) ;
+    for( int i = 0 ; i <  num  ; i++ ) {
+        scanf( "%d", &( *data )[ i ] ) ;
     }//end for
 
     printf( "Number of elements: %d\n", num ) ;
-    for ( int i = 0 ; i < num ; i++ ) {
-       printf( "%d ", (*data)[ i ] ) ; 
+    for( int i = 0 ; i < num ; i++ ) {
+        printf( "%d ", ( *data )[ i ] ) ;
     }//end for
-    printf( "\n" ) ;
-
+    
     return num ;
-}
+}//end function

@@ -1,0 +1,62 @@
+Enter the number of rows: 2
+Enter the number of columns: 3
+Enter the matrix elements: 1 2 3 4 5 6
+Matrix ( 2 x 3 ):
+1 2 3 
+4 5 6 
+
+
+Enter the number of rows: 3
+Enter the number of columns: 2
+Enter the matrix elements: 7 8 9 10 11 12  
+Matrix ( 3x2 ):
+7 8 
+9 10 
+11 12 
+
+
+Enter the number of rows: 1
+Enter the number of columns: 4
+Enter the matrix elements: 7 8 9 10
+Matrix:
+7 8 9 10 
+
+
+Enter the number of rows: 3
+Enter the number of columns: 1
+Enter the matrix elements: 11 12 13
+Matrix:
+11 
+12 
+13 
+
+
+Enter the number of rows: 0
+Enter the number of columns: 0
+Matrix:
+(empty)
+
+
+Enter the number of rows: 3
+Enter the number of columns: 2
+Enter the matrix elements: 21 22 23 24 25 26
+Matrix:
+21 22 
+23 24 
+25 26 
+
+
+Enter the number of rows: 2
+Enter the number of columns: 2
+Enter the matrix elements: 1 2 3
+Error: Incorrect number of elements.
+
+
+Enter the number of rows: 0
+Enter the number of columns: 3
+Error: Invalid matrix dimensions.
+
+
+Enter the number of rows: 3
+Enter the number of columns: 0
+Error: Invalid matrix dimensions.

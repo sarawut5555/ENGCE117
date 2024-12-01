@@ -9,7 +9,7 @@ int main() {
     return 0 ;
 }//end function
 
-void GetSet( int *data[], int *num ) {//ต้องเพิ่ม pointer 
+void GetSet( int *data[], int *num ) {
     scanf( "%d", num ) ;
 
     for( int i = 0 ; i < *num ; i++ ) {

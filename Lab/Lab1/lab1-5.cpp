@@ -1,19 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void GetMatrix( int **value, int *row, int *col ) ;
+void GetMatrix( int *value[], int *row, int *col ) ;
 
 int main() {
     int *data = NULL, m, n ;
     GetMatrix( &data, &m, &n ) ;
-
-    if ( data != NULL ) { 
-        free( data ) ; //คืนหน่วยหน่วยจำ
-    }//end if
     return 0 ;
 }//end function
 
-void GetMatrix( int **value, int *row, int *col ) {
+void GetMatrix( int *value[], int *row, int *col ) {
     printf( "Enter the number of rows: " ) ;
     scanf( "%d", row ) ;
     printf( "Enter the number of columns: " ) ;
@@ -81,6 +77,7 @@ void GetMatrix( int **value, int *row, int *col ) {
                 char c = getchar() ;
                 if ( c == '\n' && ( i < *row - 1 || j < *col - 1 ) ) {             
                     printf( "Error: Incorrect number of elements." ) ;
+                    return ;
                 }//end if
             }//end for
             printf( "\n" ) ;
@@ -95,7 +92,7 @@ void GetMatrix( int **value, int *row, int *col ) {
             }//end for
             printf( "\n" ) ;
         }//end for
-        
+
         printf( "Matrix ( %d x %d ):\n", *row, *col ) ;
         for( int i = 0 ; i < *row ; i++ ) {
             for( int j = 0 ; j < *col ; j++ ) {
