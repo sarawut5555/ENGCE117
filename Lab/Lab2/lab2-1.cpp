@@ -15,11 +15,10 @@ void reverse( char str1[], char str2[] ) {
     int j = 0 ;
 
     for( int i = len - 1 ; i >= 0 ; i-- ) {
-        str2[j++] = str1[i] ;
+        str2[ j++ ] = str1[ i ] ;
     }//end for
     
     for( int i = 0 ; i < len ; i++ ) {
     	printf( "%c", str2[ i ] ) ;
     }//end for
-    str2[j] = '\0' ;
 }//end function
