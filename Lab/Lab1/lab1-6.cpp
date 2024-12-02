@@ -6,6 +6,7 @@ int* GetMatrix( int *row, int *col ) ;
 int main() {
     int *data, m, n ;
     data = GetMatrix( &m, &n ) ;
+    free( data ) ; //คืนค่าหน่วยความจำ
     return 0 ;
 }//end function
 
