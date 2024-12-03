@@ -1,12 +1,10 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 void GetMatrix( int *value[], int *row, int *col ) ;
 
 int main() {
     int *data, m, n ;
     GetMatrix( &data, &m, &n ) ;
-    free( data ) ; //คืนค่าหน่วยความจำ
     return 0 ;
 }//end function
 
@@ -16,7 +14,8 @@ void GetMatrix( int *value[], int *row, int *col ) {
     printf( "Enter the number of columns: " ) ;
     scanf( "%d", col ) ;
 
-    *value = ( int* )malloc( ( *row ) * ( *col ) * sizeof( int ) ) ; //จองหน่วยความจำ
+    int size = ((*row) * (*col)) ;
+    *value = new int [ size ] ;
     
     if( *row == 0 && *col > 0 || *col == 0 && *row > 0 ) {  //case row or col = 0
         printf( "\nError: Invalid matrix dimensions." ) ;

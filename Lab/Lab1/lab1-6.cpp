@@ -1,19 +1,18 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 int* GetMatrix( int *row, int *col ) ;
 
 int main() {
     int *data, m, n ;
     data = GetMatrix( &m, &n ) ;
-    free( data ) ; //คืนค่าหน่วยความจำ
     return 0 ;
 }//end function
 
 int* GetMatrix( int *row, int *col ) {
     scanf( "%d %d", row, col ) ;
     
-    int *data = ( int * )malloc( ( *row ) * ( *col ) * sizeof( int ) ) ;
+    int size = ( ( *row ) * ( *col ) ) ;
+    int *data = new int [ size ] ;
     
     if( *row == 2 && *col == 3 ) { //case row and col = 2 แต่ป้อนค่าไม่ครบจำนวนขนาดที่เลือก matrix
         for( int i = 0 ; i < *row ; i++ ) {
