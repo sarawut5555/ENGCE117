@@ -2,8 +2,8 @@
 
 int main() {
     int num ;
-    printf("Input : ") ;
-    scanf( "%d",&num ) ;
+    printf( "Input : " ) ;
+    scanf( "%d", &num ) ;
 
     if( num % 2 == 0 ) {
         printf( "%d is an even integer", num ) ;
