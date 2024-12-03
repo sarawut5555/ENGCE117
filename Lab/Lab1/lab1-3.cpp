@@ -12,7 +12,7 @@ int *GetSet( int *num ) {
     printf( "Enter the number of elements: " ) ;
     scanf( "%d", num ) ;
 
-    int *arr ;
+    int *arr = new int [ *num ] ;
 
     printf( "Enter the Elements: " ) ;
     for ( int i = 0 ; i < *num ; i++ ) {

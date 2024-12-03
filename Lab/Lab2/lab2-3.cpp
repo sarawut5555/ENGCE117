@@ -21,7 +21,6 @@ int main() {
 void explode( char str1[], char splitter[], char str2[][ 10 ], int *count ) {
     *count = 0 ;
     
-    // ใช้ strtok เพื่อแยกคำตามตัวแบ่งที่กำหนด
     char *token = strtok( str1, splitter ) ;
     
     while ( token != NULL ) {

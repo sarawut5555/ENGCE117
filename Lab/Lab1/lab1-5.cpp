@@ -14,7 +14,7 @@ void GetMatrix( int *value[], int *row, int *col ) {
     printf( "Enter the number of columns: " ) ;
     scanf( "%d", col ) ;
 
-    int size = ((*row) * (*col)) ;
+    int size = ( ( *row ) * ( *col ) ) ;
     *value = new int [ size ] ;
     
     if( *row == 0 && *col > 0 || *col == 0 && *row > 0 ) {  //case row or col = 0
