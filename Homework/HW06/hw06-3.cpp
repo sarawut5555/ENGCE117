@@ -8,7 +8,8 @@ int main() {
     scanf( "%d" ,&m ) ;
     printf( "Stop : " ) ;
     scanf( "%d" ,&n ) ;
-    
+
+    printf( "\n" ) ;    
     for( int i = m ; i <= n ; i++ ) {
         for( int j = 1 ; j < 10 ; j++ ) {
             result = i * j ;
@@ -16,4 +17,5 @@ int main() {
         }//end for
         printf( "\n" ) ;
     }// end for
+    return 0 ;
 }//end function

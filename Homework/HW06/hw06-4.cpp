@@ -15,9 +15,9 @@ int main() {
         result += current_n ;  
 
         if( i < n ) {
-            printf(" + ") ;  
+            printf( " + " ) ;  
         }//end if
     }//end for
     printf( "\nSum = %d\n", result ) ;  
-    return 0;
+    return 0 ;
 }//end function

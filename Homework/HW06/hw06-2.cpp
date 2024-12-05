@@ -8,7 +8,7 @@ int main() {
     char symbols[ 13 ][ 3 ] = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"} ;
 
     printf( "%d = ", n ) ;
-    for( int i = 0; i < 13; i++ ) {
+    for( int i = 0; i < 13 ; i++ ) {
         while( n >= values[ i ] ) {
             printf( "%s", symbols[ i ] ) ;
             n -= values[ i ] ;
