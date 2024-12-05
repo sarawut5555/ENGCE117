@@ -6,6 +6,9 @@ void GetSet( int [], int * ) ;
 int main() {
     int *data, num ;
     GetSet( data, &num ) ;
+    for( int i = 0 ; i < num ; i++ ) {
+        printf( "%d ", data[ i ] ) ;
+    }//end for
     return 0 ;
 }//end function
 

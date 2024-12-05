@@ -12,7 +12,7 @@ int main() {
 
 char* reverse( char str1[] ) {
     int len = strlen( str1 ) ;
-    static char str2[ 50 ] ; //static array
+    char *str2 = new char[ len ] ; 
 
     for( int i = 0 ; i < len ; i++ ) {
         str2[ i ] = str1[ len - 1 - i ] ;
