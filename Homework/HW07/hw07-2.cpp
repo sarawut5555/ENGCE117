@@ -1,21 +1,21 @@
 #include <stdio.h>
 
 int main() {
-    int start, end; 
+    int m, n; 
 
     printf( "Start: " ) ;
-    scanf( "%d", &start ) ;
+    scanf( "%d", &m ) ;
     printf( "End: " ) ;
-    scanf( "%d", &end ) ;
+    scanf( "%d", &n ) ;
 
-    int current = start ; 
+    int current = m ; 
     printf("\n");
     
-    while(current <= end) {
-        int multiplier = 1 ; 
-        while( multiplier <= 9 ) {
-            printf( "%d x %d = %d\n", current, multiplier, current * multiplier ) ;
-            multiplier++ ; 
+    while(current <= n) {
+        int mul = 1 ; 
+        while( mul <= 9 ) {
+            printf( "%d x %d = %d\n", current, mul, current * mul ) ;
+            mul++ ; 
         }
         printf( "\n" ) ; 
         current++ ;
