@@ -5,9 +5,7 @@ int main() {
     int first = 1 , second = 1 ;     
     int result = 0 , count = 0 ; 
     
-    printf( "Enter a number: " ) ;
     scanf( "%d", &n ) ;
-
     printf( "Series = " ) ;
     
     while( count < n ) {
