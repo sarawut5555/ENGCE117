@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 int main() {
-    int number ;
+    int n ;
     printf( "User input: " ) ;
-    scanf( "%d", &number ) ;
+    scanf( "%d", &n ) ;
 
-    switch( number ) {
+    switch( n ) {
         case 1:  
             printf( "One\n" ) ;
             break ;
