@@ -9,16 +9,16 @@ int main() {
     scanf( "%d", &n ) ;
 
     int current = m ; 
-    printf("\n");
+    printf( "\n" );
     
-    while(current <= n) {
+    while( current <= n ) {
         int mul = 1 ; 
         while( mul <= 9 ) {
             printf( "%d x %d = %d\n", current, mul, current * mul ) ;
             mul++ ; 
-        }
+        }//end while
         printf( "\n" ) ; 
         current++ ;
-    }
+    }//end while
     return 0;
-}
+}//end function

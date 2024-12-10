@@ -19,15 +19,14 @@ int main() {
                 if( i % j == 0 ) {
                     Prime = 0 ; 
                     break ; 
-                }
-            }
-        }
+                }//end if
+            }//end for
+        }//end if
 
         if( Prime ) {
             printf( "%d ", i ) ; 
-        }
+        }//end if
         i-- ; 
-    } 
-    while ( i >= 2 ) ; 
+    } while ( i >= 2 ) ; 
     return 0 ;
-}
+}//end function

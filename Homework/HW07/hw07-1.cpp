@@ -3,20 +3,19 @@
 int main() {
     int n, i = 1;
 
-    printf( "Enter number: ");
     scanf( "%d", &n ) ;
 
-    if( n % 2 == 1 ) {
+    if( n % 2 == 0 ) {
+        while( i <= n ) {
+            printf( "(%d) Hello World\n", i ) ;
+            i++ ;
+        }//end while
+    } 
+    else {
         while( i <= n ) {
             printf( "[%d] Hello World\n", i ) ;
             i++ ;
-        }
-    } 
-    else {
-        while(i <= n) {
-            printf( "(%d) Hello World\n", i ) ;
-            i++ ;
-        }
-    }
+        }//end while
+    }//end if
     return 0 ;
-}
+}//end function

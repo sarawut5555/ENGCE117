@@ -2,7 +2,8 @@
 
 int main() {
     int n, i = 1 ;
-    int current_n = 9, sum = 0 ;
+    int current_n = 9 ;
+    int sum = 0 ;
 
     printf( "Enter number: " ) ;
     scanf( "%d", &n ) ;
@@ -17,8 +18,8 @@ int main() {
         }
         current_n = current_n * 10 + 9 ; 
         i++ ; 
-    } 
-    while( i <= n ) ;
-        printf( "\nSum = %d\n", sum ) ;
+    } while( i <= n ) ;
+    
+    printf( "\nSum = %d\n", sum ) ;
     return 0 ;
 }
