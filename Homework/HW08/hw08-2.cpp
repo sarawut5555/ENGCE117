@@ -14,7 +14,7 @@ int main() {
             printf( "%s !\n", grades[ i ] ) ;
             status = 1 ;
             break ;
-        }//end if
+        }//end if                          
     }//end for
     if( !status ) {
         printf( "A !\n" ) ; 
