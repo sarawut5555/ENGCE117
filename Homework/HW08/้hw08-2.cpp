@@ -7,13 +7,17 @@ int main() {
 
     int scores[] = { 50, 55, 60, 65, 70, 75, 80 } ; 
     char grades[][ 3 ] = { "F", "D", "D+", "C", "C+", "B", "B+" } ; 
-
+    
+    int status = 0;
     for( int i = 0 ; i < 7 ; i++ ) { 
         if( s < scores[ i ] ) {
             printf( "%s !\n", grades[ i ] ) ;
-            return 0 ;
+            status = 1 ;
+            break ;
         }//end if
     }//end for
-    printf( "A !\n" ) ; 
+    if( !status ) {
+        printf( "A !\n" ) ; 
+    }//end if
     return 0;
 }//end function
