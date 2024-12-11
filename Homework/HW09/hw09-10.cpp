@@ -24,9 +24,8 @@ int main() {
         printf("\n");
     }//end for
     
-    rows2 = cols1 ;
+    rows2 =cols1 ;
     cols2 = rows1 ;
-    
     int array2[cols1][rows1];
     
     for( int i = 0 ; i < rows2 ; i++ ) {
