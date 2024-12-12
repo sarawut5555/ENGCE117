@@ -6,7 +6,7 @@ int main() {
     int input ;
 
     while( true ) {
-        printf("Input [%d] : ", size ) ;
+        printf( "Input [%d] : ", size ) ;
         scanf( "%d", &input ) ;
         if( input == -1 )  break ;
         arr[ size ] = input ; 

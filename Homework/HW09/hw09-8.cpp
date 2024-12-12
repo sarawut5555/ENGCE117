@@ -5,27 +5,27 @@ void Descending( int arr[], int size ) ;
 int main() {
     int n ;
     
-    printf("Enter new element of Array : ");
-    scanf("%d", &n);
+    printf( "Enter new element of Array : " ) ;
+    scanf( "%d", &n ) ;
 
-    int *arr = new int[n];
+    int *arr = new int[ n ] ;
     
-    for(int i = 0; i < n; i++) {
-        printf("Input : ");
-        scanf("%d", &arr[i]);
+    for( int i = 0 ; i < n ; i++ ) {
+        printf( "Input : " ) ;
+        scanf( "%d", &arr[ i ] ) ;
     }
-        printf("Array: ");
-    for(int i = 0; i < n; i++) {
-        printf("%d ", arr[i]);
+        printf( "Array: " ) ;
+    for( int i = 0 ; i < n ; i++ ) {
+        printf( "%d ", arr[ i ] ) ;
     }
-    printf("\n");
+    printf( "\n" ) ;
 
-    Descending(arr, n);
+    Descending( arr, n ) ;
 
-    if (n >= 3) {
-        printf("The large 3rd element = %d\n", arr[2]);
+    if( n >= 3 ) {
+        printf( "The large 3rd element = %d\n", arr[ 2 ] ) ;
     } else {
-        printf("The array does not have 3 elements\n");
+        printf( "The array does not have 3 elements\n" ) ;
     }
     
     return 0;

@@ -3,36 +3,37 @@
 void Ascending( int arr[], int size ) ;
 
 int main() {
-    int oldArr[] = {9, 2, 6, 1, 7}; // อาเรย์เดิม
+    int oldArr[] = { 9, 2, 6, 1, 7 } ; 
     int oldsize = 5 ;
     int newsize, n ;
-    printf("Enter new element of Array : ") ;
-    scanf("%d", &newsize ) ;
+
+    printf( "Enter new element of Array : ") ;
+    scanf( "%d", &newsize ) ;
     
-    int *newArr = new int [oldsize + newsize] ;
+    int *newArr = new int[ oldsize + newsize ] ;
     
-    for (int i = 0; i < oldsize; i++) {
-        newArr[i] = oldArr[i];
+    for( int i = 0 ; i < oldsize ; i++ ) {
+        newArr[ i ] = oldArr[ i ] ;
     }
     
-    for (int i = oldsize; i < oldsize + newsize; i++) {
-        printf("Input : ");
-        scanf("%d", &n);
-        newArr[i] = n;
+    for( int i = oldsize ; i < oldsize + newsize ; i++ ) {
+        printf( "Input : ") ;
+        scanf( "%d", &n ) ;
+        newArr[ i ] = n ;
     }
     
-    printf("Old Array: ");
-    for (int i = 0; i < oldsize; i++) {
-        printf("%d ", oldArr[i]);
+    printf( "Old Array: " ) ;
+    for( int i = 0 ; i < oldsize ; i++) {
+        printf( "%d ", oldArr[ i ] ) ;
     }
-    printf("\n");
+    printf( "\n" ) ;
     
-    Ascending(newArr, oldsize + newsize);
-    printf("New Array: ");
-    for (int i = 0; i < oldsize + newsize; i++) {
-        printf("%d ", newArr[i]);
+    Ascending( newArr, oldsize + newsize ) ; 
+    printf( "New Array: " ) ;
+    for( int i = 0 ; i < oldsize + newsize ; i++ ) {
+        printf( "%d ", newArr[ i ] ) ;
     }
-    printf("\n");
+    printf( "\n" ) ;
     return 0 ;
 }
 

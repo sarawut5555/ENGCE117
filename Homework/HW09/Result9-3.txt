@@ -1,0 +1,10 @@
+Input value to Array1 [0]: 9
+Input value to Array1 [1]: 5
+Input value to Array1 [2]: 6
+Input value to Array1 [3]: 8
+Input value to Array1 [4]: -1
+
+Array1 = 9 5 6 8 
+Array2 = 0 0 0 0 
+--| Copy Data from Array1 to Array2
+Array2 = 9 5 6 8 

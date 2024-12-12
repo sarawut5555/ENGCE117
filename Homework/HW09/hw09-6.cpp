@@ -35,6 +35,7 @@ int main() {
         arr3[ A1 + i ] = arr2[ i ] ;
     }
     printf( "\n" ) ;
+    
     Descending( arr3, A1 + A2 ) ;
     printf( "Merge Array1 & Array2 to Array3\n" ) ;
     printf( "Array3 = " ) ;

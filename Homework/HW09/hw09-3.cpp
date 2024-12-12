@@ -7,7 +7,7 @@ int main() {
     int input ;
 
     while( true ) {
-        printf("Input value to Array1 [%d]: ", size);
+        printf( "Input value to Array1 [%d]: ", size ) ;
         scanf( "%d", &input ) ;
         if( input == -1 ) break ;
         arr1[ size ] = input ;
