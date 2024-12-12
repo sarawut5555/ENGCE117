@@ -16,7 +16,7 @@ int main() {
     arr[ pos ] = '\0' ; 
 
     printf( "\n" ) ;
-    printf( "String = ") ;
+    printf( "String = " ) ;
     for ( int i = 0 ; i < pos ; i++ ) {
         printf( "%c ", arr[ i ] ) ;
     }
