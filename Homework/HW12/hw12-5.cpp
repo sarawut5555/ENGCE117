@@ -67,7 +67,7 @@ void formatAndPrintSalary( float salary ) {
 
     for( int i = 0; i < len - 3 ; i++ ) {  
         if( i != 0 && ( len - i ) % 3 == 0 ) {
-            printf( "," ) ;  // เพิ่มลูกน้ำเมื่อจำเป็น
+            printf( "," ) ;  
         }
         printf( "%c", result_str[ i ] ) ;
     }
