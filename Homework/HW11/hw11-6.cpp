@@ -1,5 +1,19 @@
 #include <stdio.h>
 
+void fibonacci( int n, int first, int second, int count, int *sum ) ;
+
+int main() {
+    int n ;
+    int result = 0 ;  
+
+    scanf( "%d", &n ) ;
+    printf( "Series = " ) ;
+    
+    fibonacci( n, 1, 1, 0, &result ) ;
+    printf( "\nSum = %d\n", result ) ;
+    return 0 ;
+}
+
 void fibonacci( int n, int first, int second, int count, int *sum ) {
     while( count < n ) {
         if( count == 0 ) {
@@ -19,16 +33,4 @@ void fibonacci( int n, int first, int second, int count, int *sum ) {
         }//end if
         count++ ;
     }//end while
-}
-
-int main() {
-    int n ;
-    int result = 0 ;  
-
-    scanf( "%d", &n ) ;
-    printf( "Series = " ) ;
-    
-    fibonacci( n, 1, 1, 0, &result ) ;
-    printf( "\nSum = %d\n", result ) ;
-    return 0 ;
 }

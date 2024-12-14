@@ -6,13 +6,13 @@ int main() {
     int *data, m, n ;
     GetMatrix( &data, &m, &n ) ;
 
-    printf( "Matrix ( %d x %d ):\n", m, n ) ; 
-    for( int i = 0 ; i < m ; i++ ) {
-        for( int j = 0 ; j < n ; j++ ) {
-                printf( "%d ", data[ i * n + j ] ) ;
-        }//end for
-        printf( "\n" ) ;
-    }//end for
+    // printf( "Matrix ( %d x %d ):\n", m, n ) ; 
+    // for( int i = 0 ; i < m ; i++ ) {
+    //     for( int j = 0 ; j < n ; j++ ) {
+    //             printf( "%d ", data[ i * n + j ] ) ;
+    //     }//end for
+    //     printf( "\n" ) ;
+    // }//end for
     
     return 0 ;
 }//end function
