@@ -5,17 +5,14 @@ int main() {
 
     scanf( "%d", &n ) ;
 
-    if( n % 2 == 0 ) {
-        while( i <= n ) {
-            printf( "(%d) Hello World\n", i ) ;
+    while( i <= n && n % 2 == 0 ) {
+        printf( "(%d) Hello World\n", i ) ;
+        i++ ;
+    }//end while
+
+    while( i <= n && n % 2 != 0 ) {
+        printf( "[%d] Hello World\n", i ) ;
             i++ ;
-        }//end while
-    } 
-    else {
-        while( i <= n ) {
-            printf( "[%d] Hello World\n", i ) ;
-            i++ ;
-        }//end while
-    }//end if
+    }//end while
     return 0 ;
-}//end function
+}
