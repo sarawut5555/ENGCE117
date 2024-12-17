@@ -1,26 +1,30 @@
 #include <stdio.h>
+#include <string.h>
 
 int main() {
-    char input ;
-    char arr[ 100 ] ;
-    int pos = 0 ;
+    char input[ 2 ] ;         
+    char arr[ 100 ] = "" ;     
+    int pos = 0 ;         
 
     while( true ) {
-        printf( "Enter 1 character: \n" ) ;
-        scanf( " %c", &input ) ; 
-        if( input == 'Y' || input == 'y' ) { 
-            break ; 
+        printf( "Enter 1 character: " ) ;
+        printf( "\n" ) ;
+        scanf( " %1s", input ) ;
+
+        if( strcmp( input, "Y" ) == 0 || strcmp( input, "y" ) == 0 ) {
+            break;
         }
-        arr[ pos++ ] = input ; 
+        arr[ pos++ ] = input[ 0 ] ;
+        arr[ pos ] = '\0' ;  
     }
-    arr[ pos ] = '\0' ; 
-
+    
+    printf( "\nString = " ) ;
+    for( int i = 0 ; i < pos ; i++ ) {
+        printf( "%c", arr[ i ] ) ;
+        if( i < pos - 1 ) {
+            printf(" ") ; 
+        }
     printf( "\n" ) ;
-    printf( "String = " ) ;
-    for ( int i = 0 ; i < pos ; i++ ) {
-        printf( "%c ", arr[ i ] ) ;
+    return 0 ;
     }
-    printf( "\n" ) ;
-
-    return 0;
 }

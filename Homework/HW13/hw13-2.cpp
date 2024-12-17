@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <string.h>
 
-void reverseString( char *str ) ;
+void reverse( char *str ) ;
 
 int main() {
     char str[ 50 ] ;
-    scanf( "%[^\n]", str ) ; 
+    fgets( str, 50, stdin ) ; 
     
     reverse( str ) ;
     printf( "%s\n", str ) ;

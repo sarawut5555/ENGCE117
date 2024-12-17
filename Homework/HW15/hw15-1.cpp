@@ -10,7 +10,7 @@ int main() {
         return 0 ; 
     }
 
-    fscanf( fp, "%[^\n]", txt) ;
+    fgets( txt, 50, stdin) ;
     fclose( fp ) ;  
     printf( "Text in file = %s", txt ) ;
     return 0 ;
