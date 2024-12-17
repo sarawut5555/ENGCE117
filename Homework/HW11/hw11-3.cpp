@@ -7,7 +7,7 @@ int main() {
     char text[ 50 ] ;
     char out[ 50 ] ;
 
-    scanf( "%[^\n]" , text ) ;
+    fgets( text, 50, stdin ) ;
     reverse( text, out ) ;
     return 0 ;
 }//end function
