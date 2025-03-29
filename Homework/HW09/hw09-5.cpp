@@ -1,47 +1,52 @@
 #include <stdio.h>
 
-void Ascending( int arr[], int size ) ;
-    
+// เหมือน 09-4 แต่ไม่แสดงตัวเลขที่ซ้ำ (ไม่แสดงจำนวนครั้ง) และเรียงจากน้อยไปมาก
+
 int main() {
     int n ;
-
-    printf( "Input N: " ) ;
+    printf( "Input N : " ) ;
     scanf( "%d", &n ) ;
 
-    int *arr = new int [ n ] ;
-    
+    int *arr ;
+    arr = new int[ n ] ;
+
+    bool *store ;
+    store = new bool[ n ]{ false } ;
+
     for( int i = 0 ; i < n ; i++ ) {
         printf( "Input : " ) ;
         scanf( "%d", &arr[ i ] ) ;
-    }
-    printf( "\n" ) ;
-    
-    printf( "Unique value: " ) ;
-    for( int i = 0 ; i < n ; i++ ) {
-        int unique = 1 ;
-        for( int j = 0 ; j < n ; j++ ) {
-            if( arr[ i ] == arr[ j ] && i != j ) {
-                unique = 0 ; 
-                break ;
-            }
-        }
-        Ascending ( arr, n ) ;
-        if( unique ) {
-            printf( "%d ", arr[ i ] ) ;
-        }
-    }    
-}
+    }// end for
 
-void Ascending( int arr[], int size ) {
-    for( int i = 1 ; i < size - 1 ; i++ ) {
-        int minIndex = i ;
-        for( int j = i + 1 ; j < size ; j++ ) {
-            if( arr[ j ] < arr[ minIndex ] ) {
-                minIndex = j ;
-            }
-        }
-        int temp = arr[ i ] ;
-        arr[ i ] = arr[ minIndex ] ;
-        arr[ minIndex ] = temp ;
-    }
-}
+    // sort
+    int tmp ;
+    for( int i = 0 ; i < n ; i++ ) {
+        for ( int j = 0 ; j < n ; j++ ) {
+            if ( arr[ i ] < arr[ j ] ) {
+                tmp = arr[ i ] ;
+                arr[ i ] = arr[ j ] ;
+                arr[ j ] = tmp ;
+            }//end if
+        }//end for
+    }//end for
+
+    printf( "Unique value : " ) ;
+
+    for( int i = 0 ; i < n ; i++ ) {
+        if( store[ i ] ) continue ; // already detected
+
+        int count = 1 ;
+        for ( int j = i + 1 ; j < n ; j++ ) {
+            if ( arr[ i ] == arr[ j ] ) {
+                count++ ; // increment duplicates
+                store[ j ] = true ; // mark index
+            }//end if
+        }//end for
+
+        if( count == 1 ) {
+            printf( "%d ", arr[ i ] ) ;
+        }//end if
+    }//end for
+
+    return 0 ;
+}//end function

@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int GetSet( int* [] ) ;
+int GetSet( int *[] ) ;
 
 int main() {
     int *data, num ;
@@ -17,12 +17,12 @@ int GetSet( int *data[] ) {
 
     printf( "Enter the elements: " ) ;
     for( int i = 0 ; i <  num  ; i++ ) {
-        scanf( "%d", &( *data )[ i ] ) ;
+        scanf( "%d", &(*data) [ i ] ) ;
     }//end for
 
     printf( "Number of elements: %d\n", num ) ;
     for( int i = 0 ; i < num ; i++ ) {
-        printf( "%d ", ( *data )[ i ] ) ;
+        printf( "%d ", (*data) [ i ] ) ;
     }//end for
     
     return num ;

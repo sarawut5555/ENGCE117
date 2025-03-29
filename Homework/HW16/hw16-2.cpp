@@ -9,12 +9,17 @@ int main() {
 }//end function
 
 int BinarySearch( int data[], int n, int find ) {
-    int Output = -1 ;
-    for( int i = 0 ; i < n ; i++ ) {
-        if( data[ i ] == find ) {
-            Output = i ; 
-            break ; 
+    int i, j, m, pos ;
+    i = 0, j = n - 1 ;
+    while (i < j) {
+        m = ( i + j ) / 2 ;
+        if( data[ m ] < find ){
+            i = m + 1 ;
+        }
+        else {
+            j = m ;
         }
     }
-    return Output ;
+    pos = ( data[i] == find ? i : -1);
+    return pos ;
 }

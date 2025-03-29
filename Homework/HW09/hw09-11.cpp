@@ -1,66 +1,85 @@
 #include <stdio.h>
 
+// ทำการคูณ matrix
+
 int main() {
-    int rows1, cols1, rows2, cols2 ;
+    int r1, r2, c1, c2 ;
+    int array1[ 100 ][ 100 ] ;
+    int array2[ 100 ][ 100 ] ;
+    int result[ 100 ][ 100 ] ;
 
+    // กำหนดขนาด matrix 1 (row col)
     printf( "Array1 Value : " ) ;
-    scanf( "%d %d", &rows1, &cols1 ) ;
+    scanf( "%d %d", &r1, &c1 ) ;
 
-    int array1[ rows1 ][ cols1 ] ;
-    printf( "Array1 elements:\n" ) ;
-    for( int i = 0 ; i < rows1 ; i++ ) {
-        for( int j = 0 ; j < cols1 ; j++ ) {
+    // รับค่าสมาชิก matrix 1
+    printf( "Array1 element : " ) ;
+    for( int i = 0 ; i < r1 ; i++ ) {
+        for( int j = 0 ; j < c1 ; j++ ) {
             scanf( "%d", &array1[ i ][ j ] ) ;
         }
-    }
+    }//end for
 
+    // กำหนดขนาด matrix 2 (row col)
     printf( "Array2 Value : " ) ;
-    scanf( "%d %d", &rows2, &cols2 ) ;
+    scanf( "%d %d", &r2, &c2 ) ;
 
-    if( cols1 != rows2 ) {
-        printf( "Matrix multiplication is not possible!\n" ) ;
-    }
+    // คูณไม่ได้เพราะ column ของ matrix 1 ไม่ขนาดไม่เท่ากับ row ของ matrix 2
+    if( c1 != r2 ) {
+        printf( "Matrix multiplication not possible.\n" ) ;
+        return 1 ;
+    }//end if
 
-    int array2[ rows2 ][ cols2 ] ;
-    printf( "Array2 elements:\n" ) ;
-    for( int i = 0 ; i < rows2 ; i++ ) {
-        for( int j = 0 ; j < cols2 ; j++ ) {
+
+    // รับค่าสมาชิก matrix 2
+    printf( "Array2 element : " ) ;
+    for( int i = 0 ; i < r2 ; i++ ) {
+        for( int j = 0 ; j < c2 ; j++ ) {
             scanf( "%d", &array2[ i ][ j ] ) ;
         }
-    }
+    }//end for
 
-    int array3[ rows1 ][ cols2 ] ;
-    for( int i = 0 ; i < rows1 ; i++ ) {
-        for( int j = 0 ; j < cols2 ; j++ ) {
-            array3[ i ][ j ] = 0 ; 
-            for( int k = 0 ; k < cols1 ; k++ ) {
-                array3[ i ][ j ] += array1[ i ][ k ] * array2[ k ][ j ] ;
+    for( int i = 0 ; i < r1 ; i++ ) {
+        for( int j = 0 ; j < c2 ; j++ ) {
+            result[ i ][ j ] = 0 ;
+        }
+    }//end for
+
+    for( int i = 0 ; i < r1 ; i++ ) { // วนซ้ำ row matrix 1
+        for( int j = 0 ; j < c2 ; j++ ) { // วนซ้ำ col matrix 2
+            for( int k = 0 ; k < c1 ; k++ ) { // วนซ้ำ col matrix 1
+                // คูณ matrix 
+                result[ i ][ j ] += array1[ i ][ k ] * array2[ k ][ j ] ;
             }
         }
-    }
+    }//end for
 
-    printf( "\nArray1\n");
-    for( int i = 0 ; i < rows1 ; i++ ) {
-        for( int j = 0 ; j < cols1 ; j++ ) {
+     // แสดงผล Array1
+    printf( "Array1\n" ) ;
+    for( int i = 0 ; i < r1;  i++ ) {
+        for( int j = 0 ; j < c1 ; j++ ) {
             printf( "%d ", array1[ i ][ j ] ) ;
         }
         printf( "\n" ) ;
-    }
+    }//end for
 
-    printf( "\nArray2\n" ) ;
-    for(int i = 0 ; i < rows2 ; i++ ) {
-        for( int j = 0 ; j < cols2 ; j++ ) {
+    // แสดงผล Array2
+    printf( "Array2\n" ) ;
+    for( int i = 0 ; i < r2 ; i++ ) {
+        for( int j = 0 ; j < c2 ; j++ ) {
             printf( "%d ", array2[ i ][ j ] ) ;
         }
         printf( "\n" ) ;
-    }
+    }//end for
 
-    printf( "\nArray1 x Array2\n" ) ;
-    for( int i = 0 ; i < rows1 ; i++ ) {
-        for( int j = 0 ; j < cols2 ; j++ ) {
-            printf( "%d ", array3[ i ][ j ] ) ;
+    // แสดงผล Array1 x Array2
+    printf( "Array1 x Array2\n" ) ;
+    for( int i = 0 ; i < r1 ; i++ ) {
+        for( int j = 0 ; j < c2 ; j++ ) {
+            printf( "%d ", result[ i ][ j ] ) ;
         }
         printf( "\n" ) ;
-    }
-    return 0 ;
-}
+    }//end for
+
+    return 0;
+}//end function

@@ -1,32 +1,32 @@
 #include <stdio.h>
 
+// เหมือน 6-5 แตกต่างที่ใช้ do while แทน for
+
 int main() {
-    int n ;
-    
-    printf( "Enter number: " ) ;
-    scanf( "%d", &n ) ;
+    int num ;
+    printf( "Enter number : " ) ;
+    scanf( "%d", &num ) ;
 
-    int i = n ;
-    
+    int i = num ;
     do {
-        int Prime = 1 ; 
-        if( i <= 1 ) {
-            Prime = 0 ; 
-        }
+        // check is prime
+        bool isPrime = true ;
+        for ( int j = 2 ; j * j <= i ; j++ ) {
+            // หารลงตัว ถือว่าไม่ใช่จำนวนเฉพาะ
+            if( i % j == 0 ) {
+                isPrime = false ;
+                break ;
+            }//end if
+        }//end for
 
-        else {
-            for( int j = 2 ; j * j <= i ; j++ ) {
-                if( i % j == 0 ) {
-                    Prime = 0 ; 
-                    break ; 
-                }//end if
-            }//end for
+        // หากเป็นจำนวนเฉพาะ ให้แสดงค่า i
+        if( isPrime ) {
+            printf( "%d ", i ) ;
         }//end if
 
-        if( Prime ) {
-            printf( "%d ", i ) ; 
-        }//end if
-        i-- ; 
-    } while ( i >= 2 ) ; 
+        // decrement from start until 2
+        i-- ;
+    } while( i > 1 ) ;
+
     return 0 ;
-}//end function
+}//end funtion
